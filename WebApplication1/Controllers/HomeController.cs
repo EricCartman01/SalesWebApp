@@ -34,6 +34,16 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public IActionResult Teste()
+        {
+            List<string> vs = new List<string>();
+            vs.Add("Flamengo");
+            vs.Add("Barcelona");
+            vs.Add("Real Madrid");
+            
+            return View(vs);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
